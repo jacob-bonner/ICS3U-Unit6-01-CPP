@@ -23,11 +23,13 @@ int main() {
     for (int counter = 0; counter < 10; counter++) {
         randomNumber = rand_r(&seed) % 100;
         numberArray[counter] = randomNumber;
+        std::cout << numberArray[counter] << std::endl;
         sum = sum + numberArray[counter];
     }
 
     average = sum/10.0;
 
     // Output
+    std::cout << "" << std::endl;
     std::cout << "The average of your numbers is " << average << std::endl;
 }
